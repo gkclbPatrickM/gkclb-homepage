@@ -1,0 +1,85 @@
+#container {
+  position: relative;
+  height: 100%;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  font-family: "Consolas";
+  line-height: 42px; /* 4px +12px + 4px */
+  font-size: 40pt;
+  color: #050505;
+  hyphens: none;
+}
+
+#content {
+  padding: 15px;
+  font-family: "Consolas";
+  font-size: 14pt;
+  color: #FFFFFF;
+  hyphens: auto;
+}
+
+/* defining html body
+*/
+body {
+  margin: 0; padding: 0;
+  hyphens: auto;
+}
+
+/* defining anchor appearance
+*/
+a { color: #8c79ea; } /* CSS link color */
+a:hover { color: #6c5eb5; } /* CSS link color */
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+/* defining bullet points aus squares
+*/
+ul { padding: 0 35px; }
+li { list-style: none; }
+li:before {
+    font-family: "Consolas", AppleGothic, Impact, Verdana, sans-serif;
+    content: '■';
+    color: #6c5eb5;
+    float: left;
+    width: 1em;
+    margin: .5em -2em;
+    font-size: 60%;
+}
+
+/* defining html headers
+*/
+h1 {
+  font-family: "Consolas";
+  font-size: 18pt;
+  color: #6c5eb5;
+}
+
+h2 {
+  font-family: "Consolas";
+  font-size: 16pt;
+  color: #6c5eb5;
+}
+
+/* table appearance
+*/
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #6c5eb5;
+  font-family: "Consolas";
+  font-size: 14pt;
+  color: #FFFFFF;
+  vertical-align:top;
+}
